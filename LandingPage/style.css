@@ -17,8 +17,25 @@ header {
 }
 
 .hero {
-  background-color: #f9f9f9;
-  padding: 60px 0;
+  position: relative;
+  background: url("./assets/img1.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -65,7 +82,6 @@ footer {
   color: #fff;
 }
 
-/* Add your animations here (example) */
 .hero img,
 .about img,
 .adopt img,
@@ -78,4 +94,28 @@ footer {
 .adopt img:hover,
 .contact form:hover {
   transform: scale(1.1);
+}
+
+.adopt .pet-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.adopt .pet-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .adopt .pet-images {
+    justify-content: center;
+  }
+
+  .adopt .pet-image {
+    margin: 0 10px;
+  }
 }
