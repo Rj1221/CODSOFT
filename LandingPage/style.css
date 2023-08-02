@@ -1,10 +1,15 @@
 body {
   font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
   background-color: #4287f5;
   padding: 10px 0;
+}
+.navbar {
+  background-color: #4287f5;
 }
 
 .navbar-brand {
@@ -22,6 +27,7 @@ header {
   background-size: cover;
   padding: 100px 0;
   text-align: center;
+  opacity: 1;
 }
 
 .hero-overlay {
@@ -71,11 +77,13 @@ header {
 .btn-primary {
   background-color: #75db4a;
   border-color: #75db4a;
+  transition: background-color 0.3s ease;
 }
 
 .btn-secondary {
   background-color: #f54e42;
   border-color: #f54e42;
+  transition: background-color 0.3s ease;
 }
 
 footer {
@@ -118,4 +126,15 @@ footer {
   .adopt .pet-image {
     margin: 0 10px;
   }
+}
+
+.fade-in-element {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
 }
