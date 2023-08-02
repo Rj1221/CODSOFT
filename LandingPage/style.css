@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #4287f5;
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #333333;
+}
