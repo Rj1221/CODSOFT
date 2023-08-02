@@ -15,3 +15,67 @@ header {
 .navbar-nav .nav-link {
   color: #333333;
 }
+
+.hero {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #333333;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #333333;
+}
+
+.about,
+.adopt,
+.contact {
+  padding: 80px 0;
+}
+
+.about h2,
+.adopt h2,
+.contact h2 {
+  font-size: 30px;
+  color: #333333;
+}
+
+.about p,
+.adopt p,
+.contact p {
+  font-size: 18px;
+  color: #333333;
+}
+
+.btn-primary {
+  background-color: #75db4a;
+  border-color: #75db4a;
+}
+
+.btn-secondary {
+  background-color: #f54e42;
+  border-color: #f54e42;
+}
+
+footer {
+  color: #fff;
+}
+
+/* Add your animations here (example) */
+.hero img,
+.about img,
+.adopt img,
+.contact form {
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover,
+.about img:hover,
+.adopt img:hover,
+.contact form:hover {
+  transform: scale(1.1);
+}
