@@ -7,9 +7,13 @@
 **Landing Page**
 
 - [Task 1](https://github.com/Rj1221/CODSOFT/tree/main/LandingPage)
-  **Calculator**
+
+**Calculator**
+
 - [Task 2](https://github.com/Rj1221/CODSOFT/tree/main/Calculator)
-  **Portfolio**
+
+**Portfolio**
+
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 - [License](#license)
 
