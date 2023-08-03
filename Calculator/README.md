@@ -42,6 +42,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-Created with ❤️ by [Your Name](https://github.com/Rj1221)
+Created with ❤️ by [Raj](https://github.com/Rj1221)
 
 ---
