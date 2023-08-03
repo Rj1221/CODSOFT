@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container mx-auto mt-10">
+        <div class="glassmorphism-calculator p-8 rounded-lg shadow-lg">
+            <div class="result-screen bg-gray-200 rounded-lg p-4 text-right text-4xl font-bold mb-4" id="output">0</div>
+            <div class="grid grid-cols-4 gap-4">
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="clearScreen()">C</button>
+                <button class="calculator-button bg-gray-500 hover:bg-gray-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('%')">%</button>
+                <button class="calculator-button bg-gray-500 hover:bg-gray-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('/')">/</button>
+                <button class="calculator-button bg-gray-500 hover:bg-gray-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('*')">*</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('7')">7</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('8')">8</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('9')">9</button>
+                <button class="calculator-button bg-gray-500 hover:bg-gray-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('-')">-</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('4')">4</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('5')">5</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('6')">6</button>
+                <button class="calculator-button bg-gray-500 hover:bg-gray-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('+')">+</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('1')">1</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('2')">2</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('3')">3</button>
+                <button class="calculator-button bg-gray-500 hover:bg-gray-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('0')">0</button>
+                <button class="calculator-button bg-blue-500 hover:bg-blue-600 rounded-lg p-4 text-white font-bold"
+                    onclick="appendToScreen('.')">.</button>
+                <button class="calculator-button bg-gray-500 hover:bg-gray-600 rounded-lg p-4 text-white font-bold"
+                    onclick="deleteLastCharacter()">X</button>
+                <button
+                    class="calculator-button bg-green-500 hover:bg-green-600 rounded-lg p-4 text-white font-bold col-span-2"
+                    onclick="evaluateExpression()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
