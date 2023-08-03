@@ -42,7 +42,7 @@ If you have any questions or want to know more about our adoption process, pleas
 
 ## How to Run Locally
 
-1. Clone the repository: `git clone https://github.com/your-username/pet-adoption.git`
+1. Clone the repository: `git clone https://github.com/Rj1221/pet-adoption.git`
 2. Open the `index.html` file in your preferred web browser.
 3. Explore the website and find your perfect pet!
 
