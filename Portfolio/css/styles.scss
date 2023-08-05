@@ -1,0 +1,187 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+/* global css */
+:root {
+  --main-color: #a800a8;
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --black-900: #000;
+  --black-400: #555555;
+  --black-100: #f7f7f7;
+  --white: #fff;
+  --black-alpha-100: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  font-size: 16px;
+  font-weight: normal;
+  overflow-x: hidden;
+  background-color: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.btn-1 {
+  background-color: var(--main-color);
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  color: var(--white);
+  font-size: 16px;
+  text-transform: capitalize;
+  box-shadow: var(--shadow-black-300);
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.btn-1:hover {
+  color: var(--main-color);
+  background-color: var(--white);
+}
+
+.btn-2 {
+  background-color: var(--white);
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  color: var(--main-color);
+  font-size: 16px;
+  text-transform: capitalize;
+  box-shadow: var(--shadow-black-100);
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.btn-2:hover {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black-900);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  color: var(--black-900);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.section-title h2 span {
+  color: var(--main-color);
+}
+
+.owl-carousel .owl-dots {
+  padding: 0 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-carousel button.owl-dot {
+  height: 6px;
+  width: 24px;
+  background-color: #dddddd;
+  display: inline-block;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+.owl-carousel button.owl-dot.active {
+  background-color: var(--main-color);
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--white);
+  padding: 30px 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s ease;
+}
+
+.navbar.navbar-shrink {
+  padding: 20px 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar > .container {
+  padding: 0 15px;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  color: var(--main-color);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.navbar .nav-item {
+  margin-left: 35px;
+}
+
+.navbar .nav-item .nav-link {
+  color: var(--black-400);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 0;
+  position: relative;
+}
+
+.navbar .nav-item .nav-link::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 0;
+  background-color: var(--main-color);
+  left: 50%;
+  top: -45px;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-out 0s;
+}
+
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:hover {
+  color: var(--main-color);
+}
+
+.navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link:hover::before {
+  height: 45px;
+}

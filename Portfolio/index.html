@@ -3,16 +3,127 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Raj - Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-
+    <header class="header-area">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- brand -->
+                <a href="index.html" class="navbar-brand">Raj</a>
+                <!-- toggler/collapsible button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active" data-scroll-nav="0">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" data-scroll-nav="1">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link" data-scroll-nav="2">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link" data-scroll-nav="3">project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-scroll-nav="4">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- home section -->
+        <section class="home" id="home" data-scroll-index="0">
+            <div class="header-content d-flex align-items-center">
+                <div id="parallax">
+                    <div class="header-shape shape-one" data-depth="0.10">
+                        <img src="./img/shape/shape-1.png" alt="">
+                    </div>
+                    <div class="header-shape shape-two" data-depth="0.30">
+                        <img src="./img/shape/shape-2.png" alt="">
+                    </div>
+                    <div class="header-shape shape-three" data-depth="0.40">
+                        <img src="./img/shape/shape-3.png" alt="">
+                    </div>
+                    <div class="header-shape shape-fore" data-depth="0.60">
+                        <img src="./img/shape/shape-2.png" alt="">
+                    </div>
+                    <div class="header-shape shape-five" data-depth="0.20">
+                        <img src="./img/shape/shape-1.png" alt="">
+                    </div>
+                    <div class="header-shape shape-six" data-depth="0.15">
+                        <img src="./img/shape/shape-4.png" alt="">
+                    </div>
+                    <div class="header-shape shape-seven" data-depth="0.50">
+                        <img src="./img/shape/shape-5.png" alt="">
+                    </div>
+                    <div class="header-shape shape-eight" data-depth="0.40">
+                        <img src="./img/shape/shape-3.png" alt="">
+                    </div>
+                    <div class="header-shape shape-nine" data-depth="0.20">
+                        <img src="./img/shape/shape-6.png" alt="">
+                    </div>
+                    <div class="header-shape shape-ten" data-depth="0.30">
+                        <img src="./img/shape/shape-3.png" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="home-text">
+                                <h4>HELLO, I'M</h4>
+                                <h1>Raj</h1>
+                                <p>Full Stack Developer</p>
+                                <div class="home-btn">
+                                    <a href="#" class="btn-1">view my work</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="home-img d-none d-lg-block">
+                                <img src="./img/img1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header social -->
+                <div class="header-social">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="header-social-icon">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+
+    <!-- Header Ends  -->
     <!-- Main -->
     <main class="main" id="main">
 
@@ -21,6 +132,7 @@
     <footer class="footer">
 
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
