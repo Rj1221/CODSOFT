@@ -3,7 +3,7 @@ const downloadLink = document.getElementById('download-link');
 downloadLink.addEventListener('click', function (event) {
     event.preventDefault();
     const cvFileName = 'Resume.pdf';
-    const cvUrl = 'Internship/CodSoft/portfolio/img/' + cvFileName;
+    const cvUrl = '../img/' + cvFileName;
     const tempLink = document.createElement('a');
     tempLink.href = cvUrl;
     tempLink.download = cvFileName;
