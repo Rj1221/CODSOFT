@@ -1,3 +1,15 @@
+// Resume download
+const downloadLink = document.getElementById('download-link');
+downloadLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    const cvFileName = 'Resume.pdf';
+    const cvUrl = 'Internship/CodSoft/portfolio/img/' + cvFileName;
+    const tempLink = document.createElement('a');
+    tempLink.href = cvUrl;
+    tempLink.download = cvFileName;
+    tempLink.click();
+    tempLink.remove();
+});
 $(document).ready(function () {
     // navbar shrink
     $(window).on("scroll", function () {
